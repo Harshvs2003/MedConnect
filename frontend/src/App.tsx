@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Homepage from './pages/Homepage';
+import Specialities from './pages/Specialities';
 import Contact from './pages/Contact';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/specialities" element={<div style={{paddingTop: '100px', textAlign: 'center', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h2>Specialities Page - Coming Soon</h2></div>} />
+          <Route path="/specialities" element={<Specialities />} />
           <Route path="/doctors" element={<div style={{paddingTop: '100px', textAlign: 'center', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h2>Doctors Page - Coming Soon</h2></div>} />
           <Route path="/services" element={<div style={{paddingTop: '100px', textAlign: 'center', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h2>24x7 Services Page - Coming Soon</h2></div>} />
           <Route path="/blogs" element={<div style={{paddingTop: '100px', textAlign: 'center', minHeight: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><h2>Blogs Page - Coming Soon</h2></div>} />
